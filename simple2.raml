@@ -1,0 +1,22 @@
+#%RAML 0.8
+title: test2
+version: test2
+/newResource:
+  displayName: resourceName
+  post:
+    body: 
+      application/json:
+        schema: |
+          {"hello": "hi"}
+        example: |
+          {"this": "is json example"}
+      application/xml:
+        schema: |
+          <scheme>this is xml ex</scheme>
+        example: |
+          <xml>asf</xml>
+      application/x-www-form-urlencoded:
+        schema: |
+          <scheme>this is urlencoded ex</scheme>
+        example: |
+          {"urlencsadfasdfoded": "123"}
